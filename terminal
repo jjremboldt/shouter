@@ -1,0 +1,143 @@
+Last login: Mon Oct  2 17:55:37 on console
+Epicodus-8A:~ Guest$ pwd
+/Users/Guest
+Epicodus-8A:~ Guest$ cd desktop
+Epicodus-8A:desktop Guest$ touch shouter.js
+Epicodus-8A:desktop Guest$ cd shouter
+Epicodus-8A:shouter Guest$ ls
+js
+Epicodus-8A:shouter Guest$ git init
+Initialized empty Git repository in /Users/Guest/Desktop/shouter/.git/
+Epicodus-8A:shouter Guest$ git add .
+Epicodus-8A:shouter Guest$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   js/shouter.js
+
+Epicodus-8A:shouter Guest$ git commit -m "Save the shouter function created in browser"
+[master (root-commit) 08c2615] Save the shouter function created in browser
+ Committer: Guest User <Guest@Epicodus-8A.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+)
+ create mode 100644 js/shouter.js
+Epicodus-8A:shouter Guest$ git push aj https://github.com/AmyJacobs/shouter.git
+fatal: remote part of refspec is not a valid name in https://github.com/AmyJacobs/shouter.git
+Epicodus-8A:shouter Guest$ cd ~ 
+Epicodus-8A:~ Guest$ cd shouter
+-bash: cd: shouter: No such file or directory
+Epicodus-8A:~ Guest$ cd desktop
+Epicodus-8A:desktop Guest$ cd shouter
+Epicodus-8A:shouter Guest$ gyt unut
+-bash: gyt: command not found
+Epicodus-8A:shouter Guest$ git init
+Reinitialized existing Git repository in /Users/Guest/Desktop/shouter/.git/
+Epicodus-8A:shouter Guest$ git status
+On branch master
+nothing to commit, working tree clean
+Epicodus-8A:shouter Guest$ git push master jr https://github.com/jjremboldt/shouter.git
+fatal: remote part of refspec is not a valid name in https://github.com/jjremboldt/shouter.git
+Epicodus-8A:shouter Guest$ cd ~
+Epicodus-8A:~ Guest$ pwd
+/Users/Guest
+Epicodus-8A:~ Guest$ touch .pairs
+Epicodus-8A:~ Guest$ atom .
+Epicodus-8A:~ Guest$ git aj jr
+git: 'aj' is not a git command. See 'git --help'.
+
+Did you mean this?
+	am
+Epicodus-8A:~ Guest$ git pair aj jr
+fatal: Not a git repository (or any of the parent directories): .git
+Epicodus-8A:~ Guest$ pwd
+/Users/Guest
+Epicodus-8A:~ Guest$ cd desktop
+Epicodus-8A:desktop Guest$ cd shouter
+Epicodus-8A:shouter Guest$ git pair aj jr
+local:  user.name Amelia Jacobs and John Remboldt
+local:  user.email amelia+john@
+local:  user.initials aj jr
+Epicodus-8A:shouter Guest$ git about
+git user:       Amelia Jacobs and John Remboldt
+git email:      amelia+john@
+GitHub project: NONE
+Epicodus-8A:shouter Guest$ git status
+On branch master
+nothing to commit, working tree clean
+Epicodus-8A:shouter Guest$ git-pair-commit -m "Fix .pairs file"
+Committing under john@
+On branch master
+nothing to commit, working tree clean
+Epicodus-8A:shouter Guest$ git log
+commit 08c26152ddda250d6d0ca3ebd705897a24c58ad0 (HEAD -> master)
+Author: Guest User <Guest@Epicodus-8A.local>
+Date:   Mon Oct 2 20:12:44 2017 -0700
+
+    Save the shouter function created in browser
+Epicodus-8A:shouter Guest$ git remote add aj pairs:
+Epicodus-8A:shouter Guest$   al: Ada Lovelace 
+-bash: al:: command not found
+Epicodus-8A:shouter Guest$   edlf: Enrique de la Fuente 
+-bash: edlf:: command not found
+Epicodus-8A:shouter Guest$ email:
+-bash: email:: command not found
+Epicodus-8A:shouter Guest$   al: adanator@me.com
+-bash: al:: command not found
+Epicodus-8A:shouter Guest$   edlf: queenrique@gmail.com 
+-bash: edlf:: command not found
+Epicodus-8A:shouter Guest$ git remote add aj https://github.com/AmyJacobs/shouter.git
+fatal: remote aj already exists.
+Epicodus-8A:shouter Guest$ git remote add shout https://github.com/AmyJacobs/shouter.git
+Epicodus-8A:shouter Guest$ git remote -v
+aj	pairs: (fetch)
+aj	pairs: (push)
+shout	https://github.com/AmyJacobs/shouter.git (fetch)
+shout	https://github.com/AmyJacobs/shouter.git (push)
+Epicodus-8A:shouter Guest$ git push shout master
+Username for 'https://github.com': AmyJacobs
+Password for 'https://AmyJacobs@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 376 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/AmyJacobs/shouter.git
+ * [new branch]      master -> master
+Epicodus-8A:shouter Guest$ git remote add https://github.com/jjremboldt/shouter.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+Epicodus-8A:shouter Guest$ git remote add shouter https://github.com/jjremboldt/shouter.git
+Epicodus-8A:shouter Guest$ git push shouter master
+Username for 'https://github.com': jjremboldt@icloud.com
+Password for 'https://jjremboldt@icloud.com@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 376 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/jjremboldt/shouter.git
+ * [new branch]      master -> master
+Epicodus-8A:shouter Guest$ 
